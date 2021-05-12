@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> home-weather </title>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+<body>
+<div id="header_section">
+{{>header}}
+</div>
+<h1> weather</h1>
+<div id="login_section" role="region" aria-label="search">
+<form action="http://localhost:3000/weather/location" method="get">
+<fieldset>
+<legend>
+for know to weather information about that location
+</legend>
+<label for="search_input">
+enter location.
+</label>
+<input type="text" id="search_input" name="location_field"/>
+<br/>
+<input type="submit" value="search" id="search_button"/>
+</fieldset>
+</form>
+</div>
+<div id="footer_section">
+{{>footer}}
+</div>
+</body>
+</html>

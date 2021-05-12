@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> weather information </title>
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+<body>
+<div id="header_section">
+{{>header}}
+</div>
+<h1> weather information </h1>
+<table>
+<caption> {{place}} weather information </caption>
+<tr> <th> place: </th> <td>{{place}}</td> </tr>
+<tr> <th> tempreture: </th> <td>{{tempreture}} </td> </tr>
+<tr> <th> feelslike: </th> <td>{{feelslike}} </td> </tr>
+<tr> <th> sun: </th> <td>{{sun}} </td> </tr>
+<tr> <th>ren: </th> <td> {{ren}} </td> </tr>
+<tr> <th> humidity: </th> <td>{{humidity}} </td> </tr>
+</table>
+<p id="goto_home">
+<a href="/weather" id="home_link"> home </a>
+</p>
+<div id="footer_section">
+{{>footer}}
+</div>
+</body>
+</html>

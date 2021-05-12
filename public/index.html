@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title> home-weather application </title>
+<link rel="stylesheet" type="text/css" href="/css/styles.css"/>
+</head>
+<body>
+<h1> home of weather application </h1>
+<div id="search_section" role="region" aria-label="search location">
+<form method="get">
+<fieldset>
+<legend> to know weather information of your entered location </legend>
+<label for="search_input">
+enter location:
+</label>
+<input type="text" id="search_input" name="search_field" />
+<br/>
+<input type="submit" value="search" id="search_button"/>
+</fieldset>
+</form>
+</div>
+<div id="get_data" role="region" aria-label="weather information">
+</div>
+<script src="/js/main.js">
+</script>
+</body>
+</html>
